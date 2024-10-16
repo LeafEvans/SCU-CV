@@ -1,0 +1,209 @@
+\include{settings}
+
+% 填写个人信息
+% 学院信息
+\newcommand{\school}{计算机学院 | College of Computer Science} 
+
+% 联系方式
+\newcommand{\contact}{
+    \scriptsize
+    \textcolor{white}{
+        % 邮箱
+        \faEnvelope \quad \href{mailto:youremail@scu.edu.com}{youremail@scu.edu.com}
+        \hspace{4em}
+        % 手机号
+        \faPhone \quad  130-6666-0000
+        % GitHub
+        \hspace{4em}
+        \faGithub \quad \href{https://github.com/xxxx}{https://github.com/xxxx}
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%
+% 简历正文
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% 页眉：校名
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north, inner sep=0pt](header) at (current page.north){
+        \includegraphics[width=\paperwidth]{images/header.png}
+    };
+    \node[anchor=west](school_logo) at (header.west){
+        \hspace{0.5cm}
+        \includegraphics[width=0.15\textwidth]{images/logo_1.png}
+    };
+    \node[anchor=east](school_name) at(header.east){
+        \textcolor{white}{\textbf{\school}}
+        \hspace{0.5cm}
+    };
+\end{tikzpicture}
+\vspace{-3.5em}
+
+% 页脚：联系方式
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt](footer) at (current page.south){
+        \includegraphics[width=\paperwidth]{images/footer.png}
+    };
+    \node[anchor=center] at(footer.center){\contact};
+\end{tikzpicture}
+
+% 背景
+\begin{tikzpicture}[remember picture, overlay]
+    \node[opacity=0.05] at(current page.center){
+        \includegraphics[width=0.7\paperwidth, keepaspectratio]{images/logo_2.png}
+    };
+\end{tikzpicture}
+
+% 个人信息部分
+\begin{figure}[h]
+    \begin{minipage}{0.82\textwidth}
+        \section{\makebox[\widthof{\faAddressCard}][c]{\color{SCU_Red}{\faAddressCard}}\quad 个人信息}
+        \begin{tabularx}{\linewidth}{p{\widthof{出生日期:}}Xp{\widthof{政治面貌:}}X}
+            姓\ \ \ \ \ \ \ \ 名: & 丁真珍珠 & 
+            性\ \ \ \ \ \ \ \ 别: & 男  \\
+            出生年月: & 2001年5月7日 & 
+            政治面貌: & 群众 \\
+        \end{tabularx}
+    \end{minipage}
+    \hspace{2em}
+    % 右边照片部分
+    \begin{minipage}{0.12\textwidth}
+        \setlength{\fboxsep}{0pt}
+        \doublebox{\includegraphics[width=\linewidth]{images/avatar.jpeg}}
+    \end{minipage}
+\end{figure}
+\vspace{-1em}
+
+% 教育背景
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{SCU_Red}{\faGraduationCap}}\quad 教育背景}
+% 本科
+{\large \textbf{四川大学锦江学院}}，专科 \hfill {四川，成都} \\
+\href{https://www.scu.edu.cn/}{你的学院}，专业：你的专业 \hfill {2000年9月-2010年6月} \\
+主修课程：课程1、课程2、课程3\ 等。
+
+\vspace{0.5em}
+% 硕士
+{\large \textbf{四川大学}}，本科 \hfill {四川，成都} \\
+{{吴玉章书院}}，专业：你的专业 \hfill {2010年9月-2020年6月} \\
+主修课程：课程1、课程2、课程3\ 等。
+
+\vspace{0.5em}
+{\large \textbf{四川大学}}，硕士 \hfill {四川，成都} \\
+计算机学院，导师：\href{导师的个人主页.site}{导师名字} \hfill {2020年9月-至今} \\
+研究方向：方向1、方向2\ 等。
+
+% 科研成果
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{SCU_Red}{\faGraduationCap}}\quad 科研成果}
+This is One of Your Paper Published in Conference A. \\
+\textbf{Tenzin Tsundue}, Alice Leaf. \hfill 发表于 \textbf{Conference A}（CCF-A类会议） 
+
+\vspace{0.5em}
+This is Another Paper. \\
+\textbf{Tenzin Tsundue}, Alice Leaf, Evans Leaf. \hfill 发表于 \textbf{Conference B} （CCF-A类会议）
+
+\vspace{0.5em}
+This is A Journal Paper. \\
+\textbf{Tenzin Tsundue}, Alice Leaf, Evans Leaf. \hfill 发表于 \textbf{Journal C} （SCI-1区）
+
+% 项目与教学经历
+\section{\makebox[\widthof{\faChalkboardTeacher}][c]{\color{SCU_Red}{\faChalkboardTeacher}}\quad 项目与教学}
+\vspace{0.5em}
+{\large{\textbf{项目名称}}} \hfill {横向/纵向项目-已完结/进行中} \\
+你在项目中扮演的角色 \hfill 2020年9月至2021年9月 \\
+项目简介。
+
+\vspace{1em}
+{\large{\textbf{某某主题讨论班}}}，主讲/参与 \hfill {2020年夏季} \\
+主要内容：内容1，内容2\ 等。
+
+\vspace{1em}
+{\large{\textbf{课程名称}}}，助教 \hfill {2021年夏季} \\
+主要内容：内容1，内容2\ 等。
+
+% 技能
+\section{\makebox[\widthof{\faWrench}][c]{\color{SCU_Red}{\faWrench}}\quad 技能}
+\vspace{0.5em}
+\begin{itemize}
+    \item 英语：六级800分、托福200分；
+    \item 编程：Python, C++, MATLAB, C.
+\end{itemize}
+
+\newpage
+
+% 页眉：校名+学院名（新页）
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north, inner sep=0pt](header) at (current page.north){
+        \includegraphics[width=\paperwidth]{images/header.png}
+    };
+    \node[anchor=west](school_logo) at (header.west){
+        \hspace{0.5cm}
+        \includegraphics[width=0.15\textwidth]{images/logo_1.png}
+    };
+    \node[anchor=east](school_name) at(header.east){
+        \textcolor{white}{\textbf{\school}}
+        \hspace{0.5cm}
+    };
+\end{tikzpicture}
+\vspace{-4em}
+
+% 页脚：联系方式
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt](footer) at (current page.south){
+        \includegraphics[width=\paperwidth]{images/footer.png}
+    };
+    \node[anchor=center] at(footer.center){\contact};
+\end{tikzpicture}
+
+% 背景
+\begin{tikzpicture}[remember picture, overlay]
+    \node[opacity=0.1] at(current page.center){
+        \includegraphics[width=0.7\paperwidth, keepaspectratio]{images/logo_2.png}
+    };
+\end{tikzpicture}
+
+% 竞赛经历
+\section{\makebox[\widthof{\faTrophy}][c]{\color{SCU_Red}{\faTrophy}}\quad 竞赛经历}
+\vspace{-1em}
+\begin{table}[h!]
+    \begin{tabularx}{\textwidth}{Xp{\widthof{第零负责人}}p{\widthof{国家级-第100名}}p{\widthof{2030年13月}}}
+        \textbf{比赛1} & 第一负责人 & 国家级-第10名 & 2023年4月 \\
+        \textbf{比赛2} & 个人参赛 & 国家级-一等奖 & 2023年8月 \\
+        \textbf{比赛3} & 个人参赛 & 省级-一等奖 & 2022年12月 \\
+    \end{tabularx}
+\end{table}
+
+% 技能特长
+\section{\makebox[\widthof{\faWrench}][c]{\color{SCU_Red}{\faWrench}}\quad 技能特长}
+\vspace{0.5em}
+\begin{itemize}
+    \item 熟练使用\Cpp 、Python、Matlab编程语言。
+    \item 熟悉Windows与Linux端开发。
+    \item 熟练使用Tensorflow，Pytorch等深度学习框架。
+    \item 熟练掌握\Cpp 与Python环境下OpenCV与Qt应用的开发。
+\end{itemize}
+
+% 所获荣誉
+\section{\makebox[\widthof{\faStar}][c]{\color{SCU_Red}{\faStar}}\quad 所获荣誉}
+\vspace{-1em}
+\begin{multicols}{2}
+    \begin{itemize}
+        \item 2021年 四川文化旅游宣传推广大使
+        \item 2021年 四川生态环境保护大使
+        \item 2020年 理塘县旅游大使
+        \item 2022年 《天天向上》综艺节目成员
+        \item 2023年 央视纪录片《跟着丁真探乡村》参与者
+        \item 2024年 《岛屿少年》综艺节目参与者
+    \end{itemize}
+\end{multicols}
+
+
+% 其他
+\section{\makebox[\widthof{\faInfo}][c]{\color{SCU_Red}{\faInfo}}\quad 其他}
+\begin{itemize}
+    \item 英语水平-CET6级xxx分
+    \item 计算机几级证书
+    \item 教师资格证：xxx
+\end{itemize}
+
+\end{document}
