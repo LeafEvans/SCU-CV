@@ -2,6 +2,11 @@
 
 这是一个基于北师大、西北工业大学和武汉大学中文简历模板修改而来的 **四川大学简历模板**。该模板用于生成个人简历，支持个性化定制个人信息、教育背景、工作经历、荣誉等内容。
 
+<p align="center">
+  <img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/c86e1906c81439c602ee6dde67e99b5.jpg" alt="SCU-CV-1" width="45%" />
+  <img src="https://leafalice-image.oss-cn-hangzhou.aliyuncs.com/img/909bb73dddebedc368621499224c57d.jpg" alt="SCU-CV-2" width="45%" />
+</p>
+
 ## 功能
 
 - 使用 LaTeX 进行简历排版，自动生成格式化简历
