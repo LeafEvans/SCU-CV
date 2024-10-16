@@ -57,6 +57,6 @@
 
 ## 鸣谢
 
-- [北师大中文 CV 模板](https://github.com/LeyuDame/BNUCV)
+- [北京师范大学中文 CV 模板](https://github.com/LeyuDame/BNUCV)
 - [西北工业大学中文 CV 模板](https://www.overleaf.com/latex/templates/npu-cv/mncqzxhvfzrx)
 - [武汉大学中文 CV 模板](https://www.overleaf.com/latex/templates/whuwu-han-da-xue-zhong-wen-jian-li-mo-ban/dbkvxrqjmzpd)
