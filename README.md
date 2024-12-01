@@ -20,7 +20,7 @@
 ├── README.md             # 项目说明文件
 ├── main.tex              # 主 LaTeX 文件，包含简历正文内容
 ├── settings.tex          # LaTeX 设置文件，包含样式和格式定义
-├── LICENSE.txt           # 许可证文件，使用 MIT 许可证
+├── LICENSE               # 许可证文件，使用 MIT 许可证
 ├── images                # 存放简历中使用的图片文件
 │   ├── header.png        # 页眉图片
 │   ├── footer.png        # 页脚图片
